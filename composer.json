@@ -1,0 +1,17 @@
+{
+    "name": "eduardo/clube-full-stack",
+    "autoload": {
+        "psr-4": {
+            "Eduardo\\ClubeFullStack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Henrique",
+            "email": "eduardo.henrique.assuncao.ribeiro@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
