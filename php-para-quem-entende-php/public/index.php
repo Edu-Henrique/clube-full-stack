@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__ . "/../app/functions/pages.php";
+    require_once __DIR__ . "/../bootstrap.php";
 ?>
 <!doctype html>
 <html lang="pt-br">
