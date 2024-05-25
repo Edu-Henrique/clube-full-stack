@@ -7,7 +7,7 @@
 <form action="pages/forms/create_user.php" method="post" role="form">
     <div class="form-group">
         <label for="name">Nome:</label>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome">
+        <input type="text" class="form-control" name="nome" id="name" placeholder="Digite seu nome">
     </div>
 
     <div class="form-group">

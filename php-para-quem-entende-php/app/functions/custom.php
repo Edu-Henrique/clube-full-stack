@@ -4,7 +4,7 @@
 function dd($dump)
 {
     var_dump($dump);
-    //die();
+    die();
 }
 
 function request()

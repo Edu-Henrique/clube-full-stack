@@ -8,14 +8,15 @@ if(isEmpty()){
     return redirect("create_user");
 }
 
-$validate = [
+$validate = validate([
     "nome" => "s",
     "sobrenome" => "s",
     "email" => "e",
     "password" => "s"
-];
+]);
 $cadastro = create("users", $validate);
 
+dd($cadastro);
 if($cadastro){
     flash("message", "Cadastrado com sucesso", "success");
 
