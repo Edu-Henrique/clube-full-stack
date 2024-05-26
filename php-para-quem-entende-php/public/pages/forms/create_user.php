@@ -16,7 +16,7 @@ $validate = validate([
 ]);
 $cadastro = create("users", $validate);
 
-dd($cadastro);
+//dd($cadastro);
 if($cadastro){
     flash("message", "Cadastrado com sucesso", "success");
 

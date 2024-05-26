@@ -1,4 +1,4 @@
-<h1>Contato</h1>
+<h1>Cadastro</h1>
 
 
 <?= get("message") ?>
