@@ -2,7 +2,8 @@
     "name": "eduardo/php-profissional",
     "autoload": {
         "files": [
-            "app/helpers/constants.php"
+            "app/helpers/constants.php",
+            "app/router/router.php"
         ],
         "psr-4": {
             "app\\": "app/"
