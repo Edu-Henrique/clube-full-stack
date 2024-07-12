@@ -9,6 +9,10 @@ try {
         throw new Exception("O índice data faltando");
     }
 
+    if (!isset($data["data"]["title"])){
+        throw new Exception("O índice title faltando");
+    }
+
     if (!isset($data["view"])){
         throw new Exception("O índice view está faltando");
     }
