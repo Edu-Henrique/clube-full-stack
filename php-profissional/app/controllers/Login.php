@@ -7,7 +7,7 @@ class Login
     public function index()
     {
         return [
-            "view" => "login.php",
+            "view" => "login",
             "data" => ["title" => "login"]
         ];
     }
@@ -28,8 +28,7 @@ class Login
             return setMessageErrorRedirect("message", "Usuário ou senha estão incorretos!", "/login");
         }
 
-        //if(password_verify($password, $user->password)){
-        if (!($password == $user->password)){
+        if(!password_verify($password, $user->password)){
             return setMessageErrorRedirect("message", "Usuário ou senha estão incorretos!", "/login");
         }
 

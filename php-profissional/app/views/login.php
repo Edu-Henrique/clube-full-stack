@@ -1,3 +1,4 @@
+<?php $this->layout('master', ['title' => $this->e($title)]) ?>
 <div class="container ">
     <div class="form-signin w-100 m-auto" style="max-width: 400px;">
         <form action="/login" method="post" class="my-5">

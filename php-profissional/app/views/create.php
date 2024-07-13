@@ -1,6 +1,8 @@
+<?php $this->layout('master', ['title' => $this->e($title)]) ?>
 <div class="my-4">
     <h2>Cadastro</h2>
     <form action="/user/store" method="post">
+        <div id="email" class="form-text"><?php echo getFlash("message") ?></div>
         <div class="mb-3">
             <label for="name" class="form-label">Nome</label>
             <input type="text" name="nome" class="form-control" id="name" aria-describedby="Nome">
