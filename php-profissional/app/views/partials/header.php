@@ -6,7 +6,7 @@
             <!--            </a>-->
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
                 <!--                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>-->
                 <!--                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>-->
                 <!--                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>-->
@@ -17,14 +17,27 @@
 <!--                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">-->
 <!--            </form>-->
 
-            <div class="mx-4">
-                <p class="text-center m-0" >Bem-vindo, Visitante</p>
-            </div>
+                <?php if(logged()): ?>
+                    <div class="mx-4">
+                        <p class="text-center m-0" >Bem-vindo, <?php echo user()->nome; ?></p>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-warning" onclick="window.location.href='/logout'">Logout</button>
+                    </div>
+                <?php else: ?>
+                    <div class="mx-4">
+                        <p class="text-center m-0" >Bem-vindo, Visitante</p>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2" onclick="window.location.href='/login'">Login</button>
+                        <button type="button" class="btn btn-warning">Sign-up</button>
+                    </div>
+                <?php endif; ?>
 
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <button type="button" class="btn btn-warning">Sign-up</button>
-            </div>
+<!--            <div class="text-end">-->
+<!--                <button type="button" class="btn btn-outline-light me-2" onclick="window.location.href='/login'">Login</button>-->
+<!--                <button type="button" class="btn btn-warning">Sign-up</button>-->
+<!--            </div>-->
         </div>
     </div>
 </header>

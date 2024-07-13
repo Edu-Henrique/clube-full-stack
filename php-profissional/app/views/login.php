@@ -10,6 +10,7 @@
             <div class="form-floating my-3">
                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Senha">
                 <label for="floatingPassword">Senha</label>
+                <?php echo getFlash("message"); ?>
             </div>
 
             <div class="form-check text-start my-3">
