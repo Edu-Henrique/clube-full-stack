@@ -18,4 +18,6 @@ return array(
     '247f1344fb27368e6ce3ca0c3646cf37' => $baseDir . '/app/helpers/validate.php',
     '537de483f7c37e376f9f0ce8f88e5535' => $baseDir . '/app/helpers/validations.php',
     '5ab98e1396e3f5e2b58c83d7576e3e6a' => $baseDir . '/app/helpers/helpers.php',
+    '86ab207e45cec131162294f29e3fe44b' => $baseDir . '/app/database/update.php',
+    'e9df96e18a56842b95eaa07bbc1681ae' => $baseDir . '/app/database/delete.php',
 );
