@@ -22,6 +22,13 @@ try {
     }
 
 
+    $arr = [
+        'nome' => 'teste 2',
+        'sobrenome' => 'Silva',
+        'email' => 'ana@teste.com',
+        'password' => '65416106'
+    ];
+
     $templates = new League\Plates\Engine(VIEWS);
 
     // Render a template
