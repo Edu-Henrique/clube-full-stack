@@ -25,5 +25,7 @@
         ?>
         <?=$this->section('content')?>
     </div>
+
+    <?=$this->section("script")?>
 </body>
 </html>

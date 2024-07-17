@@ -5,6 +5,10 @@ require_once __DIR__ . "/bootstrap.php";
 try {
     $data = router();
 
+    if (isAjax()){
+        die();
+    }
+
     if (!isset($data["data"])){
         throw new Exception("O índice data faltando");
     }
@@ -20,7 +24,6 @@ try {
     if (!file_exists(VIEWS.$data["view"].".php")){
         throw new Exception("Essa view {$data['view']} não existe");
     }
-
 
 //    $arr = [
 //        'nome' => 'teste 2',
