@@ -1,28 +1,19 @@
 <?php
 
-class UploadFoto
+namespace app\classes;
+
+class UploadFoto extends Upload
 {
-    public $file;
-    public $newName;
-    public $extensions = ["png", "jpg", "jpeg"];
 
-    public  function file($file)
-    {
-        $this->file = $file;
-    }
-    public function extension()
-    {
-        return pathinfo($this->file, PATHINFO_EXTENSION);
-    }
+    public static $propriedade_teste = "propriedade_teste";
 
-    public function rename()
-    {
-        $uniqId = uniqid(true);
-        $this->newName = $uniqId . "." . $this->extension();
-    }
+    //const PROPRIEDADE_TESTE = "propriedade_teste";
+
+    protected $extensions = ["png", "jpg", "jpeg"];
 
     public function upload()
     {
-        return $this->newName;
+        $this->teste();
+        return "Gerou a foto {$this->rename()}";
     }
 }

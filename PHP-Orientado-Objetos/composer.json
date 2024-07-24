@@ -1,0 +1,16 @@
+{
+    "name": "eduardo/php-orientado-objetos",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Henrique",
+            "email": "eduardo.henrique.assuncao.ribeiro@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace app\classes;
+
 class AtividadesPessoa
 {
     public function pular()
